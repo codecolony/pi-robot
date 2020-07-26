@@ -45,6 +45,7 @@ def reverse(t):
 	GPIO.output(15,GPIO.HIGH)
 	GPIO.output(16,GPIO.LOW)
 	time.sleep(t)
+	reset()
 
 def forward(t):
 	reset()
@@ -53,6 +54,7 @@ def forward(t):
 	GPIO.output(15,GPIO.LOW)
 	GPIO.output(16,GPIO.HIGH)
 	time.sleep(t)
+	reset()
 
 def left(t):
 	reset()
@@ -61,6 +63,7 @@ def left(t):
 	GPIO.output(15,GPIO.HIGH)
 	GPIO.output(16,GPIO.LOW)
 	time.sleep(t)
+	reset()
 
 def right(t):
 	reset()
@@ -69,6 +72,7 @@ def right(t):
 	GPIO.output(15,GPIO.LOW)
 	GPIO.output(16,GPIO.HIGH)
 	time.sleep(t)
+	reset()
 
 def clean_exit():
 	GPIO.cleanup()
