@@ -14,7 +14,7 @@ def reset():
 	GPIO.output(15,GPIO.LOW)
 	GPIO.output(16,GPIO.LOW)
 
-def forward(t):
+def reverse(t):
 	reset()
 	GPIO.output(11,GPIO.HIGH)
 	GPIO.output(13,GPIO.LOW)
@@ -22,7 +22,7 @@ def forward(t):
 	GPIO.output(16,GPIO.LOW)
 	time.sleep(t)
 
-def reverse(t):
+def forward(t):
 	reset()
 	GPIO.output(11,GPIO.LOW)
 	GPIO.output(13,GPIO.HIGH)
